@@ -70,6 +70,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                # 'store.context_processers.menu_links'
             ],
         },
     },
@@ -84,7 +85,7 @@ WSGI_APPLICATION = 'witaya_ecom.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME':'storedb',
+        'NAME':'storedb2',
         'USER': 'root',
         'PASSWORD':'',
         'HOST':'localhost',
