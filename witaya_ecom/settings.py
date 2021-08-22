@@ -74,6 +74,10 @@ TEMPLATES = [
             ],
         },
     },
+
+
+
+    
 ]
 
 WSGI_APPLICATION = 'witaya_ecom.wsgi.application'
