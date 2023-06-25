@@ -31,3 +31,6 @@ Quit the server with CTRL-BREAK.
 Not Found: /favicon.ico
 [24/Jun/2023 23:31:42] "GET /favicon.ico HTTP/1.1" 404 2117
 
+
+
+Coursera Problem solving  // https://www.coursera.org/learn/problem-solving-programming-video-games/home/week/1
