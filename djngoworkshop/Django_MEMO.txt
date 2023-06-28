@@ -1,0 +1,70 @@
+
+Need to run on CMD //
+
+C:\Users\Lenovo\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02>python -m venv witaya_ecom
+
+C:\Users\Lenovo\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02>witaya_ecom\Scripts\activate.bat
+
+(witaya_ecom) C:\Users\Lenovo\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02> python -m django --version
+
+(witaya_ecom) C:\Users\Lenovo\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02>pip list
+
+(witaya_ecom) C:\Users\Lenovo\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02>pip install django
+
+(witaya_ecom) C:\Users\Lenovo\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02>django-admin startproject djngoworkshop
+
+(witaya_ecom) C:\Users\339073\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02>cd djngoworkshop
+.............................................................................................................................
+(witaya_ecom) C:\Users\Lenovo\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02\djngoworkshop>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+June 24, 2023 - 23:31:32
+Django version 4.2.2, using settings 'djngoworkshop.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+...........................................................................................................................
+
+
+
+Coursera Problem solving  // https://www.coursera.org/learn/problem-solving-programming-video-games/home/week/1
+fontawesome link  >> https://fontawesome.com/search?q=free&o=r
+..............................................................................................................................
+
+(witaya_ecom) C:\Users\339073\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02>pip install django
+Collecting django
+  Using cached Django-4.2.2-py3-none-any.whl (8.0 MB)
+Collecting asgiref<4,>=3.6.0
+  Using cached asgiref-3.7.2-py3-none-any.whl (24 kB)
+Collecting tzdata
+  Using cached tzdata-2023.3-py2.py3-none-any.whl (341 kB)
+Collecting sqlparse>=0.3.1
+  Using cached sqlparse-0.4.4-py3-none-any.whl (41 kB)
+Collecting typing-extensions>=4
+
+...................................................................................................................................
+
+(witaya_ecom) C:\Users\339073\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02\djngoworkshop>python -m pip install Pillow
+Collecting Pillow
+  Downloading Pillow-9.5.0-cp310-cp310-win_amd64.whl (2.5 MB)
+     ---------------------------------------- 2.5/2.5 MB 1.3 MB/s eta 0:00:00
+Installing collected packages: Pillow
+Successfully installed Pillow-9.5.0
+WARNING: You are using pip version 22.0.4; however, version 23.1.2 is available.
+You should consider upgrading via the 'C:\Users\339073\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02\witaya_ecom\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(witaya_ecom) C:\Users\339073\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02\djngoworkshop>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+...................................................................................................................................
+Update June 27_2023
+
+Add image Rooth
+https://www.w3schools.com/django/django_create_virtual_environment.php  ( Django w3school)
+https://learndjango.com/tutorials/django-file-and-image-uploads-tutorial
+

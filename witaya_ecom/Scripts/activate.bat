@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\Lenovo\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02\witaya_ecom
+set VIRTUAL_ENV=C:\Users\339073\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02\witaya_ecom
 
 if not defined PROMPT set PROMPT=$P$G
 
