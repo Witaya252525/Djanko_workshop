@@ -1,6 +1,14 @@
 {% extends 'layouts.html' %}
 {% block content %}
 
- <h1>This is Home_page</h1>       
+<div class = "container">
+
+    {% for product in products %}
+        <p>{{products.name}}</p>
+    
+    
+    {% endfor % }
+</div>
+
 
 {% endblock %}
