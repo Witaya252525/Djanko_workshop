@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+# from django.http import HttpResponse
 
 
 # def index(request):
@@ -7,5 +7,12 @@ from django.http import HttpResponse
 
 def index(request):
     return render (request , 'index.html')
+
+
+def product(request):
+    return render (request , 'product.html')
+
+
+
 
 # Create your views here.
