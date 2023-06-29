@@ -13,7 +13,8 @@ def index (request):
 def product (request):
     return render (request ,"product.html")
 
-
+def witaya (request):
+    return render (request ,"witaya.html")
 
 # def about (request):
 #     return HttpResponse (" This is about page")
