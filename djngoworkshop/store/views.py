@@ -13,6 +13,8 @@ def index (request):
 def product (request):
     return render (request ,"product.html")
 
+
+
 # def about (request):
 #     return HttpResponse (" This is about page")
 
