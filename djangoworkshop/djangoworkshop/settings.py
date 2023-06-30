@@ -83,11 +83,11 @@ WSGI_APPLICATION = 'djangoworkshop.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME':  'storedb',
+        'NAME':  'chaison',
         'USER':   'root',
         'PASSWORD': '',
         'HOST': 'localhost',
-        'PORT': '3306',
+        'PORT': '',
         
        
         }
@@ -138,8 +138,8 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
- #here is latest version of pymysql in mysqldb.
- #add this settings in settings file
+# here is latest version of pymysql in mysqldb.
+# add this settings in settings file
 import pymysql
 pymysql.version_info = (1, 4, 6, 'final', 0)
 pymysql.install_as_MySQLdb()
