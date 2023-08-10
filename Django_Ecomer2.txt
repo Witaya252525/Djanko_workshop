@@ -1,0 +1,33 @@
+C:\Users\Lenovo\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02>python -m venv witaya_ecom
+
+C:\Users\Lenovo\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02>witaya_ecom\Scripts\activate.bat
+
+(witaya_ecom) C:\Users\Lenovo\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02>cd witaya_ecom
+
+(witaya_ecom) C:\Users\Lenovo\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02> python -m django --version
+
+(witaya_ecom) C:\Users\Lenovo\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02>pip list
+
+(witaya_ecom) C:\Users\Lenovo\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02>pip install django
+
+(witaya_ecom) C:\Users\Lenovo\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02>django-admin startproject djngoworkshop
+
+
+
+(witaya_ecom) C:\Users\Lenovo\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02\djngoworkshop>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+June 24, 2023 - 23:31:32
+Django version 4.2.2, using settings 'djngoworkshop.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+[24/Jun/2023 23:31:42] "GET / HTTP/1.1" 200 10664
+Not Found: /favicon.ico
+[24/Jun/2023 23:31:42] "GET /favicon.ico HTTP/1.1" 404 2117
+
