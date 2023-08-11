@@ -1,0 +1,26 @@
+This Project run on Dell computer
+
+
+
+C:\Users\339073\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02>python -m venv witaya_ecom
+
+C:\Users\339073\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02>witaya_ecom\Scripts\activate.bat
+
+(witaya_ecom) C:\Users\339073\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02>cd witaya_ecom
+
+(witaya_ecom) C:\Users\339073\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02> python -m django --version
+
+(witaya_ecom) C:\Users\339073\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02>pip list
+
+(witaya_ecom) C:\Users\339073\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02>pip install django
+
+(witaya_ecom) C:\Users\339073\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02>django-admin startproject djngoworkshop
+
+
+database : witaya /339073
+
+
+
+(witaya_ecom) C:\Users\Lenovo\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02\djngoworkshop>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
