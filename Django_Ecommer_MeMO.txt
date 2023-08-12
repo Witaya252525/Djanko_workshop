@@ -1,0 +1,116 @@
+This Project run on Dell computer
+
+
+
+C:\Users\339073\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02>python -m venv witaya_ecom
+
+C:\Users\339073\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02>witaya_ecom\Scripts\activate.bat
+
+(witaya_ecom) C:\Users\339073\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02>cd witaya_ecom
+
+(witaya_ecom) C:\Users\339073\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02> python -m django --version
+
+(witaya_ecom) C:\Users\339073\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02>pip list
+
+(witaya_ecom) C:\Users\339073\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02>pip install django
+
+(witaya_ecom) C:\Users\339073\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02>django-admin startproject djngoworkshop
+
+C:\Users\339073\OneDrive\WEBDEVELOP2023>cd Django_Ecommerce_02
+
+C:\Users\339073\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02>cd witaya_ecom
+
+C:\Users\339073\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02\witaya_ecom>.\scripts\activate
+
+(witaya_ecom) C:\Users\339073\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02\witaya_ecom>cd..
+
+(witaya_ecom) C:\Users\339073\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02>cd djangoworkshop
+
+(witaya_ecom) C:\Users\339073\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02\djangoworkshop>python manage.py runserver
+
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 11, 2023 - 22:14:46
+Django version 4.2.2, using settings 'djangoworkshop.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+
+
+database : witaya /339073
+
+
+
+(witaya_ecom) C:\Users\Lenovo\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02\djngoworkshop>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+1.Change from httprespond to render via template
+2.Add template in setting.py of project
+3.add page in .html in template folder
+4.add app store in setting.py
+5.work with layout  how to cdn bootstrap / extens.html / include.html / Fontawesome / 
+
+..............................................................................................................................................................
+6.<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello E-Commerce</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+..................................................................................................................................................
+7.Modle เเละการออกเเบบ Model.py  [ class Category and Product ] / Slug / unique //  
+category= models.ForeignKey ( Category , on_delete = models.CASCADE)
+image = models.ImageField(upload_to = "product" , blank = True),
+...........................................................................................................................................
+
+8.How to upload image , install pillow ,
+from django.conf.urls.static import static
+from django.conf import setting
+Debug = True
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL,documnet_root=settings.MEDIA_ROOT)
+    urlpatterns += static(settings.STATIC_URL,documnet_root=settings.STATIC_ROOT)
+.............................................................................................................................
+DEBUG = True
+ALLOWED_HOSTS = []\
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'media','static')
+
+
+
+Upload to database  create database , SQL ,and update admin.py
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME':  'chaison',
+        'USER':   'root',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '',
+              
+        }
+    }
+
+from django.contrib import admin
+from .models import Category ,Product
+
+admin.site.register(Category)
+admin.site.register(Product)
+
+python manage.py  makemigrations  > get 0001_initial.py  ( เตรียมโครงสร้าง)
+python manage.py migrate  ==> up up 
+...............................................................................................................
+
+create superuser pull data from database to ==> daskboard
