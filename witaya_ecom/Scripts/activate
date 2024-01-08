@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\339073\OneDrive\WEBDEVELOP2023\Django_Ecommerce_02\witaya_ecom"
+VIRTUAL_ENV="C:\Users\339073\OneDrive\GitHub 2024\Django_Ecommerce_02_Kong\witaya_ecom"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
