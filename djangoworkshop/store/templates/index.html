@@ -1,6 +1,17 @@
-{% extends 'layouts.html' %}
+{% extends 'layouts.html' %} 
+{% load static  %} 
+
 {% block content %}
 
- <h1>This is Home_page</h1>       
+<div class="container">
+  {% for product in products %}
 
-{% endblock %}
+     <h2>{{product.name}}</h2>
+     <h2><img src="{{product.images.url}}" alt="">  </h2>
+
+  {% endfor %} 
+     
+     
+    </div>
+    
+    {% endblock %}
