@@ -23,9 +23,13 @@ from django.conf import settings
 
 
 urlpatterns = [
+        # path('', views.index),
         path('admin/', admin.site.urls),
         path('product/', views.product),
-        path('', views.index),
+        path('category/<slug:category_slug>', views.index ,name = "product_by_category"),
+
+
+
     ]
 
 if settings.DEBUG:
