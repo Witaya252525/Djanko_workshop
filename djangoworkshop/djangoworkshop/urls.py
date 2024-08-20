@@ -24,6 +24,8 @@ from django.conf import settings
 
 urlpatterns = [
         # path('', views.index),
+        # path('about/', views.about),
+
         path('admin/', admin.site.urls),
         path('product/', views.product),
         path('category/<slug:category_slug>', views.index ,name = "product_by_category"),

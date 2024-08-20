@@ -6,6 +6,11 @@ from store.models import Category , Product
 # def index(request):
 #     return HttpResponse('<h1> Hello Django  </h1>')
 
+# def about(request):
+#     return HttpResponse('<h1> about page  </h1>')
+
+
+
 def index(request ,category_slug = None ):
     products=None
     category_page = None
